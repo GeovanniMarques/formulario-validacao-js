@@ -48,7 +48,7 @@ Abaixo, uma visualização da interface do formulário em ação:
 │       └── main.js
 ├── .gitignore
 ├── index.html
-├── LICENCE
+├── LICENSE
 └── README.md 
 ```
 
