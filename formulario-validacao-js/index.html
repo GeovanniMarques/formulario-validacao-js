@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário simples com validação - JavaScript</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="assets/img/formulario-de-contato.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="container">
+        <form action="https://formsubmit.co/seu-email-aqui@exemplo.com" method="post" id="formulario">
+            <div class="group">
+                <label for="name">Nome:<span>*</span></label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+            </div>
+            <div class="group">
+                <label for="email">E-mail:<span>*</span></label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+            </div>
+            <div class="group">
+                <label for="textarea">Mensagem:<span>*</span></label>
+                <textarea aria-label="Campo de mensagem" name="textarea" id="textarea"
+                    placeholder="Digite a sua mensagem" rows="6"></textarea>
+            </div>
+
+            <!--Redirecionar após o envio-->
+            <input type="hidden" name="_next" value="https://github.com/GeovanniMarques/">
+
+            <!--Desativar CAPTCHA do FormSubmit-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+
+        <div class="info">
+            <p id="mensagem"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/GeovanniMarques/" target="_blank">Geovanni Marques&copy;</a> -
+            2025</p>
+        <p></p>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
